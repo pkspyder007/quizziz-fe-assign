@@ -1,17 +1,5 @@
-/* :root {
-    --header-bg-color: rgb(132, 7, 221);
-    --header-text-color: white;
-    --quiz-header-bg-color: #f8f8f8;
-    --quiz-header-text-color: #525252;
-    --pill1-text-color: orange;
-    --pill1-bg-color: grey;
-    --pill2-bg-color: orange;
-    --pill2-text-color: grey;
-    --button-primary-color: rgb(132, 7, 221);
-    --button-secondary-color: rgb(174, 115, 216);
-    --answer-button-color: rgb(66, 228, 66);
-} */
-
+const MARKUP_CSS = `
+    
 /* Utility classes start */
 .flex {
     display: flex;
@@ -19,10 +7,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.flex-col {
-    flex-direction: column;
 }
 
 .justify-start {
@@ -66,7 +50,7 @@ header {
 }
 
 .about_quiz  {
-    padding: 1rem 1rem;
+    padding: 0 1rem;
     background: var(--quiz-header-bg-color);
 }
 
@@ -130,3 +114,6 @@ button.correct {
     color: white;
     background: var(--answer-button-color);
 }
+`;
+
+export {MARKUP_CSS};

@@ -5,7 +5,10 @@ function App() {
   return (
     <div className="app">
       <Sidebar />
-     <Markup />
+      <div>
+        <h2>Preview</h2>
+        <Markup />
+      </div>
     </div>
   );
 }

@@ -17,11 +17,23 @@ code {
   grid-template-columns: 2fr 6fr;
 }
 
-.sidebar {
+.app > div > h2 {
+  margin-left: 2rem;
+}
+
+.sidebar_container {
   background: rgb(34, 33, 58);
   color: aliceblue;
   padding: 0rem 1rem;
 }
+
+.sidebar {
+  height: 95vh;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
 .sidebar ul {
   list-style: none;
 }
@@ -31,12 +43,41 @@ code {
   justify-content: space-between;
   margin-bottom: 12px;
   margin-right: 1rem;
+  width: 100%;
+}
+
+.download_btn {
+  background: rgb(81, 40, 231);
+  padding: 0 0.5rem;
+}
+
+.download_btn svg {
+  font-weight: bold;
+}
+
+.download_btn p {
+  margin-left: 6px;
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .app {
     display: flex;
     flex-direction: column;
   }
+  .sidebar {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .sidebar ul li {
+    width: 80vw;
+  }
 }
+
+/* @media screen and (min-width: 800px) {
+  .download_btn {
+    position: absolute;
+    bottom: 0;
+  }
+} */

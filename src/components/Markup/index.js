@@ -40,7 +40,7 @@ function Markup() {
       </section>
       <main className="questions_container">
         {questions.map((ques, i) => (
-          <Question id={`${i}${ques.correctAnswerIdx}`} {...ques} />
+          <Question key={`${i}${ques.correctAnswerIdx}`} {...ques} />
         ))}
       </main>
     </div>
